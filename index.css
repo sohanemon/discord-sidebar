@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+@layer components {
+  .button-primary {
+    @apply z-10 bg-cyan-300 text-cyan-800 font-semibold text-lg rounded px-10 py-4 shadow-lg;
+  }
+  .sidebar-icon {
+    @apply flex p-3 hover:scale-110 justify-center items-center relative h-12 w-12 my-2 mx-auto
+    rounded-full cursor-pointer duration-100 ease-out
+    hover:bg-green-500 hover:rounded-xl hover:text-green-900 
+transition-all
+    text-green-300 bg-gray-800;
+  }
+  .tooltip {
+    @apply absolute left-20 top-0 w-auto min-w-max scale-0 transition-all duration-200 ease-linear
+    font-semibold text-sm rounded-full text-green-300 bg-slate-500 shadow-md my-3 p-2 px-3;
+  }
+}
